@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 50px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        background-color: #ffffff; 
+    }
+    .nav a{
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    .nav a:hover{
+        color: rgb(248, 87, 114);
+    }
+    .list ul{
+        list-style: none;
+        display: flex;
+        gap: 40px;
+        list-style: none;
+        text-decoration: none;
+        color: black;
+        
+    }
+    .logo img{
+        width: 150px;
+        height: auto;
+    }
+    .text{
+        display: flex;
+        justify-content: space-between;
+        padding: 100px;
+        color: black;
+    }
+    .text img{
+        width: 600px;
+        height: auto;
+    }
+    .form {
+            width: 450px;
+            background-color: white;
+            border-radius: 40px;
+            padding: 6px 12px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+        }
+
+        .form input {
+            border: none;
+            outline: none;
+            flex: 1;
+            font-size: 14px;
+        }
+
+        .btn {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border: none;
+            background-color: #ff2d78;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin-left: 200px;
+
+        }
+        .panda{
+            display: flex;
+            justify-content: space-between;
+           padding: 50px 40px;
+            gap: 50px;
+           
+        }
+        .panda img{
+            width: 600px;
+            height: auto;
+            border-radius: 20px;
+        }
+        .panda div{
+            width: 600px;
+           
+        }
+        .button{
+            background-color: rgb(255, 70, 101);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .stats-section {
+  background-color: #ffb6c1; 
+  padding: 60px 40px;
+  
+}
+
+
+.stats-section h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #111;
+ 
+}
+
+
+.stats-container {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+
+.stat-box {
+  background-color: #fff;
+  width: 180px;
+  height: 180px;
+  border-radius: 18px;
+  border: 3px solid #fff;
+  outline: 3px solid #fff;
+  box-shadow: 0 0 0 6px rgba(255,255,255,0.6);
+  
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.stat-box h3 {
+  color: #ff2b85;
+  font-size: 36px;
+  margin: 0;
+}
+
+.stat-box p {
+  color: #ff2b85;
+  font-weight: bold;
+  margin-top: 10px;
+  letter-spacing: 1px;
+}
+.news-table {
+  width: 100%;
+  border-spacing: 20px;
+  
+}
+
+.news-table td {
+  vertical-align: top;
+}
+
+.card {
+  height: 420px;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  
+}
+
+
+.card:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.75), transparent);
+}
+
+.card-content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  color: white;
+  z-index: 2;
+  transition: transform 0.4s ease;
+}
+
+.card:hover .card-content {
+  transform: translateY(-10px);
+}
+
+.card span {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+.card h2 {
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+.card p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+
+.card1 {
+  background-image: url("./assets2/image5.png");
+}
+
+.card2 {
+  background-image: url("./assets2/image6.png");
+}
+
+.card3 {
+  background-image: url("./assets2/image7.png");
+}
+.footer{
+    padding: 40px;
+    gap: 20px;
+}
+.footer li{
+      list-style: none;
+        gap: 40px;
+        list-style: none;
+        text-decoration: none;
+        color: white;
+}
+.footer ol a{
+    text-decoration: none;
+        color: white;
+
+}
+
+    
+</style>
+<body>
+    <nav class="nav">
+        <div class="logo"><img src="./assets2/logo.png" alt=""></div>
+        <div class="list">
+            <ul>
+              <li><a href="./careers.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./whypanda.html">Why Foodpanda?</a></li>
+                <li><a href="./jobs.html">Jobs</a></li>
+                <li><a href="./location.html">Locations</a></li>
+            </ul>
+        </div>
+        <div style="color: rgb(248, 87, 114);"><b>Saved jobs✩</b></div>
+    </nav>
+    <div class="text" style="background-color: rgb(245, 171, 184);">
+        <div>
+        
+            <br><br>
+        <h1><b>Hungry to make an impact?</b></h1><br>
+        <h2>There’s always room at our table.</h2><br><br>
+        <div class="form">
+                <form>
+                    <input placeholder=" your Job search here" type="text">
+                    <button class="btn">🔍</button>
+                </form>
+            </div>
+        </div>
+        <div>
+            <img src="./assets2/image1.png" alt="">
+        </div>
+     </div>
+<br><br>
+<div>
+    <center>
+        <h1>"To be the most loved everyday food and groceries destination"</h1>
+        <p>...that’s our mission at foodpanda. Whether it’s by delivering food on our signature pink bikes, providing insights into the newest food trends, or showcasing local favorite restaurants, we’re on a mission to redefine how food, people, culture and tech are connected.
+
+Our parent company, Delivery Hero, is a global leader in the food delivery industry processing over 3 million orders every day and operating in 40+ markets in the world, with 18,000 employees and approximately 500,000+ restaurant partners.
+
+</p>
+    </center>
+</div>
+<br><br>
+<div class="panda" style=" background-color: rgb(236, 235, 241);">
+<div>
+    <div style="color: rgb(248, 87, 114);"><h1>We love what we do</h1></div>
+    <div><p>foodpanda is the largest food and grocery delivery platform in Asia, outside of China. Operating in more than 400 cities across 11 markets, we continue to expand and grow in our core food delivery business, as well as in new verticals like grocery deliveries, with a strong tech infrastructure at our core. From our restaurants-partners, cloud kitchens and cloud grocery stores — foodpanda is just one tap away, getting everything you need into your hands quickly and conveniently!</p>
+    <button class="button"><b>Find Out More</b></button></div>
+</div>
+<img src="./assets2/image2.png" alt="">
+</div>
+<br><br>
+<div class="panda" style=" background-color: rgb(236, 235, 241);">
+    <img src="./assets2/image3.png" alt="">
+<div>
+    <div style="color: rgb(248, 87, 114);"><h1>You can be yourself at foodpanda</h1></div>
+    <div><p>With over 50 nationalities and 20 languages spoken across our markets, we pride ourselves on our focus on diversity and inclusion. We are able to exchange and bring to the table the best practices (and food!) from each corner of the world.</p>
+    <button class="button"><b>Find Out More</b></button></div>
+</div>
+
+</div>
+<br><br><br>
+
+<div class="div" style="background-color: rgb(245, 171, 184);">
+    <section class="stats-section">
+  <h2>A diverse and high-performing team</h2>
+
+  <div class="stats-container">
+    <div class="stat-box">
+      <h3>7,000 +</h3>
+      <p>EMPLOYEES</p>
+    </div>
+
+    <div class="stat-box">
+      <h3>400 +</h3>
+      <p>CITIES</p>
+    </div>
+
+    <div class="stat-box">
+      <h3>50 +</h3>
+      <p>NATIONALITIES</p>
+    </div>
+
+    <div class="stat-box">
+      <h3>20 +</h3>
+      <p>LANGUAGES</p>
+    </div>
+    <img src="./assets2/image4.png" alt="">
+  </div>
+</section>
+</div>
+<br><br><br>
+<table class="news-table">
+  <tr>
+    <td>
+      <div class="card card1">
+        <div class="card-content">
+          <span>Business</span>
+          <h2>foodpanda delivered 2024</h2>
+          <p>31.01.2025</p>
+        </div>
+      </div>
+    </td>
+
+    <td>
+      <div class="card card2">
+        <div class="card-content">
+          <span>Business</span>
+          <h2>Partners with Fiserv to enable secure payments</h2>
+          <p>23.10.2024</p>
+        </div>
+      </div>
+    </td>
+
+    <td>
+      <div class="card card3">
+        <div class="card-content">
+          <span>Press Releases</span>
+          <h2>Rider Safety Month partnership</h2>
+          <p>07.10.2024</p>
+        </div>
+      </div>
+    </td>
+    </tr>
+</table>
+<br><br><br>
+
+<footer class="footer" style="background-color: black; color: #ffffff;">
+    <img src="./assets2/logo.png" alt="">
+    <br><br>
+    <h2>Navigate</h2>
+    <li>
+      <ol><a href="./careers.html">Home</a></ol>
+      <ol><a href="./about.html">About Us</a></ol>
+      <ol><a href="./whypanda.html">Why Foodpanda?</a></ol>
+      <ol><a href="./jobs.html">Jobs</a></ol>
+      <ol><a href="./location.html">Locations</a></ol>
+    </li>
+    <br>
+    <p>Copyright © 2025 foodpanda</p>
+</footer>
+
+</body>
+</html>
